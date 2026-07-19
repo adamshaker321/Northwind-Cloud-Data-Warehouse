@@ -1,1 +1,11 @@
+SELECT 
+    ROW_NUMBER() OVER (ORDER BY CUST_ID) AS CUSTOMER_KEY,
+    CUST_ID ,
+    COMPANY_NAME,
+    CONTACT_NAME,
+    CONTACT_TITLE,
+    CITY,
+    REGION,
+    COUNTRY
+FROM {{ref('customers')}}
 

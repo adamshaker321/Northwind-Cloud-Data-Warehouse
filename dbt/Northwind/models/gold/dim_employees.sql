@@ -1,0 +1,12 @@
+SELECT 
+    ROW_NUMBER() OVER (ORDER BY EMP_ID) AS EMPLOYEE_KEY,
+    EMP_ID,
+    FULL_NAME,
+    TITLE,
+    TITLE_OF_COURTESY,
+    BIRTH_DATE,
+    HIRE_DATE,
+    CITY,
+    REGION,
+    COUNTRY
+FROM {{ref('employees')}}
