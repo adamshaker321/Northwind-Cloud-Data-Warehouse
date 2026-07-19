@@ -77,7 +77,6 @@ README.md
 
 ```bash
 dbt run
-dbt test
 dbt docs generate
 dbt docs serve
 ```
