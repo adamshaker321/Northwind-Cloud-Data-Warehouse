@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: NORTHWIND_SALES_WAREHOUSE
+    schema: BRONZE
+
+    tables:
+      - name: CATEGORIES
+      - name: CUSTOMERS
+      - name: EMPLOYEES
+      - name: ORDERS
+      - name: ORDER_DETAILS
+      - name: PRODUCTS
+      - name: SHIPPERS
+      - name: SUPPLIERS
